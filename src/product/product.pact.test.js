@@ -34,7 +34,8 @@ describe("Pact Verification", () => {
       consumerVersionSelectors: [{ tag: 'master', latest: true }, { deployed: true } ], // the new way of specifying which pacts to verify
       pactBrokerUrl: process.env.PACT_BROKER_BASE_URL,
       enablePending: true,
-      includeWipPactsSince: undefined
+      // includeWipPactsSince: undefined
+      includeWipPactsSince: "2020-01-01"
     }
 
     const stateHandlers = {
